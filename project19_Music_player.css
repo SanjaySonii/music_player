@@ -1,0 +1,112 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+body{
+    background-color: rgb(155, 175, 192);
+    background-size: 100%;
+    color: rgba(250, 255, 250, 0.829);
+    font-size: 2rem;
+}
+#Music_player{
+  display: flex;
+  position: relative;
+  z-index: 0;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  align-items: center;
+  width: 90vw;
+  height: fit-content;
+  margin: 1rem auto;
+  margin-bottom: 0rem;
+  border: .5rem double lightcoral;
+  background-color:rgb(180, 183, 185);;
+  border-radius: 2rem;
+}
+
+#player{
+    height: .5rem;
+    width: 50vw;
+}
+#songs_list:hover{
+    background-color: darkkhaki;
+    color: rgb(219, 235, 181);
+}
+#audio_cover{
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid white;
+    border-radius: 10rem;
+    padding: 0;
+}
+.player_content{
+    padding: 1rem;
+}
+.controls{
+    /* border: 2px solid rebeccapurple; */
+    padding: 0rem;
+    margin: 0rem;
+    /* background-color: lightpink; */
+}
+.control_icons{
+    height: 3.1rem;
+    width: 3.1rem;
+    margin: 0.8rem 1rem;
+}
+.control_icons img {
+    height: 3rem;
+    width: 3rem;
+    background: none;
+    /* border: 2px solid rgb(39, 114, 10); */
+}
+
+
+/* rotate class */
+
+.rotated{
+    animation: rotated 7.5s linear  infinite;
+}
+@keyframes rotated {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#details{
+    display: inline-block;
+    width: 90%;
+    position: relative;
+    z-index: 1000;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding-bottom: 1rem;
+    overflow-x: hidden;
+    height: 13rem;
+    /* border: 2px solid red; */
+}
+#Songs button{
+    display: block;
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-bottom: .2rem;
+    font-size: 2rem;
+}
+
+hr{
+    height: .2rem;
+    width: 95%;
+    background-color: tomato;
+    border: none;
+}
